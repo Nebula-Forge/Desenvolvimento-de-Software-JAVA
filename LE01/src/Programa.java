@@ -59,6 +59,7 @@ public class Programa {
             Exercicio15.DistanciaPs();
             break;
         case 16:
+            Exercicio16.MediaAritmetica();
             break;
         case 17:
             break;
