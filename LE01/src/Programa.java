@@ -13,5 +13,7 @@ public class Programa {
         Exercicio04.Calculos();
 
         Exercicio05.TrocaDeValores();
+
+        Exercicio06.CastTemperatura();
     }
 }
