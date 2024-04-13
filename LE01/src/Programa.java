@@ -17,5 +17,7 @@ public class Programa {
         Exercicio06.CastTemperatura();
 
         Exercicio07.IntervaloDeValores();
+
+        Exercicio08.ValidarNumeros();
     }
 }
