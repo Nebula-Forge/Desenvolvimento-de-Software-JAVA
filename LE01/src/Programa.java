@@ -62,6 +62,7 @@ public class Programa {
             Exercicio16.MediaAritmetica();
             break;
         case 17:
+            Exercicio17.MediaPonderada();
             break;
         case 18:
             break;
