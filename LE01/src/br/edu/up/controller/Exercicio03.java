@@ -12,7 +12,7 @@ public class Exercicio03 {
 
         PrintController.ExibirNaTela(03);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = ScannerUtil.getScanner();
 
         System.out.println("Informe um número: ");
 

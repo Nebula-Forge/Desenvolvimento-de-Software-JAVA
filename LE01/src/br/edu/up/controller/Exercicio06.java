@@ -9,7 +9,7 @@ public class Exercicio06 {
     public static void CastTemperatura() {
         PrintController.ExibirNaTela(06);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = ScannerUtil.getScanner();
 
         System.out.println("Informe a temperatura atual(em Celsius): ");
 

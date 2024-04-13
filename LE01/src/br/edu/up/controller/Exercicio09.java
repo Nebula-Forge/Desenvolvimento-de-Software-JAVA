@@ -11,7 +11,7 @@ public class Exercicio09 {
     public static void ComparaçãoNumeros() {
         PrintController.ExibirNaTela(9);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = ScannerUtil.getScanner();
 
         System.out.println("Informe um número: ");
 

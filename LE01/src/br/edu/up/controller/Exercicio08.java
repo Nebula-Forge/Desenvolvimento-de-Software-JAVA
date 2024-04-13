@@ -9,7 +9,7 @@ public class Exercicio08 {
     public static void ValidarNumeros() {
         PrintController.ExibirNaTela(8);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = ScannerUtil.getScanner();
 
         System.out.println("Digite um número: ");
 

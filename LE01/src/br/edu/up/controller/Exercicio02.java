@@ -10,7 +10,7 @@ public class Exercicio02 {
 
         PrintController.ExibirNaTela(02);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = ScannerUtil.getScanner();
 
         System.out.println("Digite um número: ");
 

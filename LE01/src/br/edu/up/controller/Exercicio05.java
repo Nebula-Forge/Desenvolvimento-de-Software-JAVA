@@ -11,7 +11,7 @@ public class Exercicio05 {
     public static void TrocaDeValores() {
         PrintController.ExibirNaTela(05);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = ScannerUtil.getScanner();
 
         System.out.println("Informe um número: ");
 

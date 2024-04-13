@@ -10,7 +10,7 @@ public class Exercicio10 {
     public static void ImprimirValores() {
         PrintController.ExibirNaTela(10);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = ScannerUtil.getScanner();
 
         System.out.println("Informe um valor de 1 a 5: ");
 

@@ -11,7 +11,7 @@ public class Exercicio07 {
     public static void IntervaloDeValores() {
         PrintController.ExibirNaTela(7);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = ScannerUtil.getScanner();
 
         System.out.println("Insira um valor para validação: ");
 

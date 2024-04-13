@@ -11,7 +11,7 @@ public class Exercicio01 {
 
         PrintController.ExibirNaTela(01);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = ScannerUtil.getScanner();
 
         System.out.println("Digite um número: ");
 

@@ -23,5 +23,8 @@ public class Programa {
         Exercicio09.ComparaçãoNumeros();
 
         Exercicio10.ImprimirValores();
+
+        // Fecha o scanner
+        ScannerUtil.closeScanner();
     }
 }
