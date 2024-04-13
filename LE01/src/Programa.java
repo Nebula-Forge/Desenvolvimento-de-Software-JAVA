@@ -21,5 +21,7 @@ public class Programa {
         Exercicio08.ValidarNumeros();
 
         Exercicio09.ComparaçãoNumeros();
+
+        Exercicio10.ImprimirValores();
     }
 }
