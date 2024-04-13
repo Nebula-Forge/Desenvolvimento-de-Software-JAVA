@@ -18,36 +18,53 @@ public class Programa {
             break;
         case 2:
             Exercicio02.SomaNumeros();
-        break;  
+            break;  
         case 3:
             Exercicio03.CompararValores();
             break;
         case 4:
-        Exercicio04.Calculos();
+            Exercicio04.Calculos();
             break;
         case 5:
             Exercicio05.TrocaDeValores();
             break;
         case 6:
             Exercicio06.CastTemperatura();
-        break;
+            break;
         case 7:
             Exercicio07.IntervaloDeValores();
-        break;
+            break;
         case 8:
             Exercicio08.ValidarNumeros();
-        break;
+            break;
         case 9:
             Exercicio09.ComparaçãoNumeros();
-        break;
+            break;
         case 10:
             Exercicio10.ImprimirValores();
-        break;
+            break;
         case 11:
             Exercicio11.ordenarNumeros();
             break;
         case 12:
             Exercicio12.EscolherMes();
+            break;
+        case 13:
+            Exercicio13.Calculadora();    
+            break;
+        case 14:
+            break;
+        case 15:
+            break;
+        case 16:
+            break;
+        case 17:
+            break;
+        case 18:
+            break;
+        case 19:
+            break;
+        case 20:
             break;
         default:
             // Fecha o scanner 
