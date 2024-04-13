@@ -11,5 +11,7 @@ public class Programa {
         Exercicio03.CompararValores();
 
         Exercicio04.Calculos();
+
+        Exercicio05.TrocaDeValores();
     }
 }
