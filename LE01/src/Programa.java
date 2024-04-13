@@ -71,6 +71,7 @@ public class Programa {
             Exercicio19.VolumeCilindro();
             break;
         case 20:
+            Exercicio20.GastoViagem();
             break;
         default:
             // Fecha o scanner 
