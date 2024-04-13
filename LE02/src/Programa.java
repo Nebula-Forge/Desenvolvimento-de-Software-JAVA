@@ -26,7 +26,7 @@ public class Programa {
                 Exercicio05.NumeroAleatorio();
                 break;
             case 6:
-               
+                Exercicio06.MediaPonderada();
                 break;
             case 7:
 
