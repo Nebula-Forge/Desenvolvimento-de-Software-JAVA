@@ -35,7 +35,7 @@ public class Programa {
                 Exercicio08.ConcatenaValores();
                 break;
             case 9:
-
+                Exercicio09.LerArray();
                 break;
             case 10:
 
