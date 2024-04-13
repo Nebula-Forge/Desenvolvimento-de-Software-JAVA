@@ -7,5 +7,7 @@ public class Programa {
         Exercicio01.ReceberNumero();
 
         Exercicio02.SomaNumeros();
+
+        Exercicio03.CompararValores();
     }
 }
