@@ -32,7 +32,7 @@ public class Programa {
                 Exercicio07.CompararVetores();
                 break;
             case 8:
-
+                Exercicio08.ConcatenaValores();
                 break;
             case 9:
 
