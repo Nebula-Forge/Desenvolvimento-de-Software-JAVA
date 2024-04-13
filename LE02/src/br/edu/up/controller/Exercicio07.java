@@ -7,7 +7,7 @@ public class Exercicio07 {
     // eles são iguais ou não. Para serem iguais, todos os elementos dos dois
     // vetores devem coincidir.
 
-    public static void CompararVetores(){
+    public static void Executar(){
         PrintController.ExibirNaTela(07);
 
         Scanner scanner = ScannerUtil.getScanner();

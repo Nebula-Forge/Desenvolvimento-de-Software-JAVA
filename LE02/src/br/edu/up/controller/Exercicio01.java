@@ -6,7 +6,7 @@ public class Exercicio01 {
     // 1. Construa um programa que leia em um vetor uma sequência de 5 números digitados pelo usuário, 
     // calcule a média e apresente na tela quais valores são menores, iguais ou superiores à média.
 
-    public static void CalculoMedia(){
+    public static void Executar(){
         PrintController.ExibirNaTela(01);
 
         Scanner scanner = ScannerUtil.getScanner();

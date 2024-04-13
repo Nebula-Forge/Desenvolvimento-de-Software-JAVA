@@ -8,7 +8,7 @@ public class Exercicio08 {
     // representa a concatenação de A e B, ou seja, C contém os elementos de A
     // seguidos dos elementos de B.
 
-    public static void ConcatenaValores() {
+    public static void Executar() {
         PrintController.ExibirNaTela(8);
 
         Scanner scanner = ScannerUtil.getScanner();

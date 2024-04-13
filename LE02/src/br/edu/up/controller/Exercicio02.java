@@ -7,7 +7,7 @@ public class Exercicio02 {
     // digitados pelo usuário e, logo após, mostre o número de cada posição do vetor
     // e se ele é positivo, negativo ou zero.
 
-    public static void ValorDePosicoes(){
+    public static void Executar(){
         PrintController.ExibirNaTela(02); 
 
         Scanner scanner = ScannerUtil.getScanner();

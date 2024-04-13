@@ -8,7 +8,7 @@ public class Exercicio06 {
     // (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3)
     // Ex.: notas: 7.5, 9.2 pesos: 6, 4. Média ponderada: (7.5 * 6 + 9.2 * 4) / (6 + 4)
 
-    public static void MediaPonderada(){
+    public static void Executar(){
         PrintController.ExibirNaTela(06);
         
         Scanner scanner = ScannerUtil.getScanner();

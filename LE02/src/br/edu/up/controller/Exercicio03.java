@@ -7,7 +7,7 @@ public class Exercicio03 {
     // digitados pelo usuário. Crie um segundo vetor que armazene o dobro de cada
     // número do primeiro vetor e depois apresente os valores deste vetor.
 
-    public static void DobrarValores() {
+    public static void Executar() {
         PrintController.ExibirNaTela(03);
 
         Scanner scanner = ScannerUtil.getScanner();

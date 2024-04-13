@@ -7,7 +7,7 @@ public class Exercicio05 {
     // vetor.Em seguida, leia um número n qualquer e apresente na tela a quantidade
     // de vezes que o número n aparece no vetor
 
-    public static void NumeroAleatorio(){
+    public static void Executar(){
         PrintController.ExibirNaTela(05);
 
         Scanner scanner = ScannerUtil.getScanner();

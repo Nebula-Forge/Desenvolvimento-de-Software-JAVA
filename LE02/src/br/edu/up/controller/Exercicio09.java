@@ -10,7 +10,7 @@ public class Exercicio09 {
     // b. Os elementos das posições ímpares de C são os elementos das posições
     // ímpares de B;
 
-    public static void LerArray(){
+    public static void Executar(){
         PrintController.ExibirNaTela(9);
 
         Scanner scanner = ScannerUtil.getScanner();

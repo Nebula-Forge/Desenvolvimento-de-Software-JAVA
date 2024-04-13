@@ -7,7 +7,7 @@ public class Exercicio04 {
     // e uma variável de um número n qualquer, depois mostre na tela o índice dos
     // elementos quesão inferiores a n.
 
-    public static void IndiceElementos() {
+    public static void Executar() {
         PrintController.ExibirNaTela(04);
 
         Scanner scanner = ScannerUtil.getScanner();
