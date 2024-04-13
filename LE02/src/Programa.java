@@ -59,6 +59,5 @@ public class Programa {
                 ScannerUtil.closeScanner();
                 System.exit(0);
         }
-
     }
 }
