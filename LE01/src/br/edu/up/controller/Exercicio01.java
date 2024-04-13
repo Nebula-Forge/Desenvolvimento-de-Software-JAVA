@@ -1,4 +1,4 @@
-package br.edu.up.exercicios;
+package br.edu.up.controller;
 
 import java.util.Scanner;
 
