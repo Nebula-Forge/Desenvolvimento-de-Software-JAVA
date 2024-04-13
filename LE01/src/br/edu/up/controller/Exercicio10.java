@@ -5,10 +5,14 @@ import java.util.Scanner;
 public class Exercicio10 {
     // 10. Escreva um algoritmo que leia um número de 1 a 5 e escreva-o por extenso.
     // Caso o usuário digite um valor que não esteja neste intervalo, exibir a
-    // mensagem: “Númeroinválido!”.
+    // mensagem: “Número inválido!”.
 
     public static void ImprimirValores() {
         PrintController.ExibirNaTela(10);
+
+        System.out.println("10. Escreva um algoritmo que leia um número de 1 a 5 e escreva-o por extenso.\n" +
+                "Caso o usuário digite um valor que não esteja neste intervalo, exibir a\n" +
+                "mensagem: “Número inválido!”.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
 
@@ -39,4 +43,3 @@ public class Exercicio10 {
         }
     }
 }
-

@@ -8,8 +8,13 @@ public class Exercicio20 {
     // considerando que sãofornecidos o tempo em hora e a velocidade média da
     // viagem.
 
-    public static void GastoViagem(){
+    public static void GastoViagem() {
         PrintController.ExibirNaTela(20);
+
+        System.out.println("20. Elabore um algoritmo que calcule a quantidade de litros de combustível\n" +
+                "gasta emuma viagem, utilizando um automóvel que faz 12km por litro e\n" +
+                "considerando que sãofornecidos o tempo em hora e a velocidade média da\n" +
+                "viagem.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
 
@@ -28,4 +33,3 @@ public class Exercicio20 {
         System.out.println("Quantidade de litros de combustível gasta: " + String.format("%.2f", litros));
     }
 }
-

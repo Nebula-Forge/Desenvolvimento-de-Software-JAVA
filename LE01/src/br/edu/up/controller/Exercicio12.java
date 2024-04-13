@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 public class Exercicio12 {
     // 12. Escreva um algoritmo que receba o número do mês e mostre o
-    // mêscorrespondente. Valide mês inválido.
+    // mês correspondente. Valide mês inválido.
 
     public static void EscolherMes() {
         PrintController.ExibirNaTela(12);
+
+        System.out.println("12. Escreva um algoritmo que receba o número do mês e mostre o\n" +
+                "mês correspondente. Valide mês inválido.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
 
@@ -57,4 +60,3 @@ public class Exercicio12 {
         }
     }
 }
-

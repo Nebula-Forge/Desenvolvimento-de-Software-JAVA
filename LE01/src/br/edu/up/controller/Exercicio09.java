@@ -11,6 +11,11 @@ public class Exercicio09 {
     public static void ComparaçãoNumeros() {
         PrintController.ExibirNaTela(9);
 
+        System.out.println("9. Leia dois números nas variáveis A e B e identifique se os valores são\n" +
+                "iguais ou diferentes. Caso eles sejam iguais imprima uma mensagem dizendo que\n" +
+                "são iguais.Caso sejam diferentes, informe que são diferentes e qual número é\n" +
+                "o maior.\n");
+
         Scanner scanner = ScannerUtil.getScanner();
 
         System.out.println("Informe um número: ");
@@ -33,4 +38,3 @@ public class Exercicio09 {
         }
     }
 }
-

@@ -6,10 +6,15 @@ public class Exercicio05 {
     // 5. Leia valores nas variáveis A e B, e efetue a troca dos valores de forma
     // que o valorda variável A passe a ser o valor da variável B e o valor da
     // variável B passe a ser o valor da variável A. Apresentar uma mensagem com o
-    // valor original de cada variávele outra com os valores trocados.
+    // valor original de cada variável e outra com os valores trocados.
 
     public static void TrocaDeValores() {
         PrintController.ExibirNaTela(05);
+
+        System.out.println("5. Leia valores nas variáveis A e B, e efetue a troca dos valores de forma\n" +
+                "que o valorda variável A passe a ser o valor da variável B e o valor da\n" +
+                "variável B passe a ser o valor da variável A. Apresentar uma mensagem com o\n" +
+                "valor original de cada variável e outra com os valores trocados.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
 
@@ -32,4 +37,3 @@ public class Exercicio05 {
         System.out.println("Valores Trocados:\nA: " + A + "\nB: " + B);
     }
 }
-

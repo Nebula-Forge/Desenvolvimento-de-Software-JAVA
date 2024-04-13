@@ -4,13 +4,17 @@ import java.util.Scanner;
 
 public class Exercicio03 {
     // 3. Escreva um algoritmo que leia os valores de dois números inteiros
-    // distintos nasvariáveis A e B e informe qual deles é o maior. Caso os números
+    // distintos nas variáveis A e B e informe qual deles é o maior. Caso os números
     // sejam iguais informarao usuário que a sequência de números informados é
     // inválida.
 
     public static void CompararValores() {
-
         PrintController.ExibirNaTela(03);
+
+        System.out.println("3. Escreva um algoritmo que leia os valores de dois números inteiros\n" +
+                "distintos nas variáveis A e B e informe qual deles é o maior. Caso os números\n" +
+                "sejam iguais informarao usuário que a sequência de números informados é\n" +
+                "inválida.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
 

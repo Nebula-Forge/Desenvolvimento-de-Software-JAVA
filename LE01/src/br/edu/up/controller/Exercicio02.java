@@ -7,8 +7,10 @@ public class Exercicio02 {
     // o resultado da sua soma.
 
     public static void SomaNumeros() {
-
         PrintController.ExibirNaTela(02);
+
+        System.out.println("2. Escreva um algoritmo que leia dois números digitados pelo usuário e exiba\n" +
+                "o resultado da sua soma.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
 
@@ -23,4 +25,3 @@ public class Exercicio02 {
         System.out.println("\nO valor somado é de: " + (valor1 + valor2));
     }
 }
-

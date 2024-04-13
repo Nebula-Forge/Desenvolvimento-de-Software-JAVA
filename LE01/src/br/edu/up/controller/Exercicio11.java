@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 public class Exercicio11 {
     // 11. Escreva um algoritmo que leia três valores inteiros distintos e
-    // escreva-os emordem crescente.
+    // escreva-os em ordem crescente.
 
     public static void ordenarNumeros() {
         PrintController.ExibirNaTela(11);
+
+        System.out.println("11. Escreva um algoritmo que leia três valores inteiros distintos e\n" +
+                "escreva-os em ordem crescente.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
 

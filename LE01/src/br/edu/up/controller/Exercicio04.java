@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 public class Exercicio04 {
     // 4. Escreva um algoritmo que leia dois números e ao final mostre a soma,
-    // subtração,multiplicação e a divisão dos números lidos.
+    // subtração, multiplicação e a divisão dos números lidos.
 
     public static void Calculos() {
         PrintController.ExibirNaTela(04);
+
+        System.out.println("4. Escreva um algoritmo que leia dois números e ao final mostre a soma,\n" +
+                "subtração, multiplicação e a divisão dos números lidos.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
 

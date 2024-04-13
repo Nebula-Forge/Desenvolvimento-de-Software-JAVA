@@ -9,6 +9,9 @@ public class Exercicio08 {
     public static void ValidarNumeros() {
         PrintController.ExibirNaTela(8);
 
+        System.out.println("8. Escreva um algoritmo que leia um número e mostre uma mensagem caso\n" +
+                "este número seja maior ou igual a 50, outra se ele for menor que 50.\n");
+
         Scanner scanner = ScannerUtil.getScanner();
 
         System.out.println("Digite um número: ");

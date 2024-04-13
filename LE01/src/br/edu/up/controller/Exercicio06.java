@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 public class Exercicio06 {
     // 6. Ler uma temperatura em graus Celsius e apresentá-la convertida em
-    // grausFahrenheit. A fórmula de conversão é:F = (9 * C + 160) / 5
+    // graus Fahrenheit. A fórmula de conversão é: F = (9 * C + 160) / 5
 
     public static void CastTemperatura() {
         PrintController.ExibirNaTela(06);
+
+        System.out.println("6. Ler uma temperatura em graus Celsius e apresentá-la convertida em\n" +
+                "graus Fahrenheit. A fórmula de conversão é: F = (9 * C + 160) / 5.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
 
@@ -18,4 +21,3 @@ public class Exercicio06 {
         System.out.println("A temperatura em Fahrenheit é de: " + (9 * Celsius + 160) / 5);
     }
 }
-
