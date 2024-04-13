@@ -44,10 +44,10 @@ public class Programa {
                 Exercicio11.Executar();
                 break;
             case 12:
-
+                Exercicio12.Executar();
                 break;
             case 13:
-
+                
                 break;
             case 14:
 
