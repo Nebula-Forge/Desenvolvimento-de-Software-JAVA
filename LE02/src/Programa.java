@@ -11,10 +11,10 @@ public class Programa {
 
         switch (escolha) {
             case 1:
-                Exericio01.CalculoMedia();
+                Exercicio01.CalculoMedia();
                 break;
             case 2:
-
+                Exercicio02.ValorDePosicoes();
                 break;
             case 3:
 

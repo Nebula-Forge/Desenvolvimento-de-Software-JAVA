@@ -2,11 +2,13 @@ package br.edu.up.controller;
 
 import java.util.Scanner;
 
-public class Exericio01 {
+public class Exercicio01 {
     // 1. Construa um programa que leia em um vetor uma sequência de 5 números digitados pelo usuário, 
     // calcule a média e apresente na tela quais valores são menores, iguais ou superiores à média.
 
     public static void CalculoMedia(){
+        PrintController.ExibirNaTela(01);
+
         Scanner scanner = ScannerUtil.getScanner();
         double[] numeros = new double[5];
         double soma = 0;
