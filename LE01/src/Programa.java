@@ -5,5 +5,7 @@ public class Programa {
     public static void main(String[] args) {
 
         Exercicio01.ReceberNumero();
+
+        Exercicio02.SomaNumeros();
     }
 }
