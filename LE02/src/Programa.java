@@ -29,7 +29,7 @@ public class Programa {
                 Exercicio06.MediaPonderada();
                 break;
             case 7:
-
+                Exercicio07.CompararVetores();
                 break;
             case 8:
 
