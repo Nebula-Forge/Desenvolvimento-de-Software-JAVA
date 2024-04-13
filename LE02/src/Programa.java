@@ -17,7 +17,7 @@ public class Programa {
                 Exercicio02.ValorDePosicoes();
                 break;
             case 3:
-
+                Exercicio03.DobrarValores();
                 break;
             case 4:
 
