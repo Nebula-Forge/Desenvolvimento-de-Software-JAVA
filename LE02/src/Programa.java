@@ -23,10 +23,10 @@ public class Programa {
                 Exercicio04.IndiceElementos();
                 break;
             case 5:
-               
+                Exercicio05.NumeroAleatorio();
                 break;
             case 6:
-
+               
                 break;
             case 7:
 
