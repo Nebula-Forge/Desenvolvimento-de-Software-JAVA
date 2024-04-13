@@ -11,6 +11,10 @@ public class Exercicio08 {
     public static void Executar() {
         PrintController.ExibirNaTela(8);
 
+        System.out.println("8. Dados dois vetores A e B de 5 elementos cada, criar um vetor C que" +
+                "\nrepresenta a concatenação de A e B, ou seja, C contém os elementos de A" +
+                "\nseguidos dos elementos de B.\n");
+
         Scanner scanner = ScannerUtil.getScanner();
         int tamanho = 5;
 

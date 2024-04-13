@@ -7,8 +7,12 @@ public class Exercicio05 {
     // vetor.Em seguida, leia um número n qualquer e apresente na tela a quantidade
     // de vezes que o número n aparece no vetor
 
-    public static void Executar(){
+    public static void Executar() {
         PrintController.ExibirNaTela(05);
+
+        System.out.println("5. Elabore um programa que leia 5 números do teclado e os armazene em um" +
+                "\nvetor.Em seguida, leia um número n qualquer e apresente na tela a quantidade" +
+                "\nde vezes que o número n aparece no vetor.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
         int tamanho = 5;

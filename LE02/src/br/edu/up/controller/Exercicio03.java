@@ -10,6 +10,10 @@ public class Exercicio03 {
     public static void Executar() {
         PrintController.ExibirNaTela(03);
 
+        System.out.println("3. Faça um programa que leia em um vetor uma sequência finita de números" +
+                "\ndigitados pelo usuário. Crie um segundo vetor que armazene o dobro de cada" +
+                "\nnúmero do primeiro vetor e depois apresente os valores deste vetor.\n");
+
         Scanner scanner = ScannerUtil.getScanner();
         int tamanho;
 

@@ -3,11 +3,17 @@ package br.edu.up.controller;
 import java.util.Scanner;
 
 public class Exercicio01 {
-    // 1. Construa um programa que leia em um vetor uma sequência de 5 números digitados pelo usuário, 
-    // calcule a média e apresente na tela quais valores são menores, iguais ou superiores à média.
+    // 1. Construa um programa que leia em um vetor uma sequência de 5 números
+    // digitados pelo usuário,
+    // calcule a média e apresente na tela quais valores são menores, iguais ou
+    // superiores à média.
 
-    public static void Executar(){
+    public static void Executar() {
         PrintController.ExibirNaTela(01);
+
+        System.out.println("1. Construa um programa que leia em um vetor uma sequência de 5 números" +
+                "\ndigitados pelo usuário, calcule a média e apresente na tela quais valores são menores, iguais ou" +
+                "\nsuperiores à média.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
         double[] numeros = new double[5];
@@ -44,6 +50,6 @@ public class Exercicio01 {
             if (numero > media) {
                 System.out.println(numero);
             }
-        } 
+        }
     }
 }

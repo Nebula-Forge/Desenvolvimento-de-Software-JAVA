@@ -10,8 +10,13 @@ public class Exercicio09 {
     // b. Os elementos das posições ímpares de C são os elementos das posições
     // ímpares de B;
 
-    public static void Executar(){
+    public static void Executar() {
         PrintController.ExibirNaTela(9);
+
+        System.out.println("9. Elabore um programa que leia os vetores A e B de 5 elementos e gere um" +
+                "\nvetor C de acordo com as seguintes regras:" +
+                "\na. Os elementos das posições pares de C são os elementos das posições pares de A;" +
+                "\nb. Os elementos das posições ímpares de C são os elementos das posições ímpares de B;\n");
 
         Scanner scanner = ScannerUtil.getScanner();
         int tamanho = 5;

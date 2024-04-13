@@ -6,11 +6,17 @@ public class Exercicio06 {
     // 6. Elabore um programa que leia um vetor com 5 notas de um aluno e um outro
     // vetorcom 5 pesos e calcule a média ponderada do aluno.Média ponderada =
     // (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3)
-    // Ex.: notas: 7.5, 9.2 pesos: 6, 4. Média ponderada: (7.5 * 6 + 9.2 * 4) / (6 + 4)
+    // Ex.: notas: 7.5, 9.2 pesos: 6, 4. Média ponderada: (7.5 * 6 + 9.2 * 4) / (6 +
+    // 4)
 
-    public static void Executar(){
+    public static void Executar() {
         PrintController.ExibirNaTela(06);
-        
+
+        System.out.println("6. Elabore um programa que leia um vetor com 5 notas de um aluno e um outro" +
+                "\nvetorcom 5 pesos e calcule a média ponderada do aluno.Média ponderada =" +
+                "\n(nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3)" +
+                "\nEx.: notas: 7.5, 9.2 pesos: 6, 4. Média ponderada: (7.5 * 6 + 9.2 * 4) / (6 + 4).\n");
+
         Scanner scanner = ScannerUtil.getScanner();
         int tamanho = 5;
         double[] notas = new double[tamanho];

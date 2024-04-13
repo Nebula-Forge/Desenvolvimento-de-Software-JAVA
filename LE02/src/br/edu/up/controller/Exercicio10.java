@@ -8,8 +8,13 @@ public class Exercicio10 {
     // elemento de A é o último elemento de B, o segundo elemento de A é o penúltimo
     // elemento de B, e assim por diante.
 
-    public static void Executar(){
+    public static void Executar() {
         PrintController.ExibirNaTela(10);
+
+        System.out.println("10. Crie um programa que leia um vetor A de 5 posições e, ao final da" +
+                "\nleitura, copie os elementos de A em B de forma invertida. Ou seja, o primeiro" +
+                "\nelemento de A é o último elemento de B, o segundo elemento de A é o penúltimo" +
+                "\nelemento de B, e assim por diante.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
         int tamanho = 5;

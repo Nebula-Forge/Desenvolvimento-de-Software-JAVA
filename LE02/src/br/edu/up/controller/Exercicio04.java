@@ -10,6 +10,10 @@ public class Exercicio04 {
     public static void Executar() {
         PrintController.ExibirNaTela(04);
 
+        System.out.println("4. Elabore um programa que leia um vetor de 5 números digitados pelo usuário" +
+                "\ne uma variável de um número n qualquer, depois mostre na tela o índice dos" +
+                "\nelementos quesão inferiores a n.\n");
+
         Scanner scanner = ScannerUtil.getScanner();
         int tamanho = 5;
         int[] vetor = new int[tamanho];

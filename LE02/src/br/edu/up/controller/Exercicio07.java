@@ -7,8 +7,12 @@ public class Exercicio07 {
     // eles são iguais ou não. Para serem iguais, todos os elementos dos dois
     // vetores devem coincidir.
 
-    public static void Executar(){
+    public static void Executar() {
         PrintController.ExibirNaTela(07);
+
+        System.out.println("7. Faça um programa que leia dois vetores de 5 elementos cada e verifique se" +
+                "\neles são iguais ou não. Para serem iguais, todos os elementos dos dois" +
+                "\nvetores devem coincidir.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
         int tamanho = 5;
