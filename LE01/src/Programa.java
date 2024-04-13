@@ -65,6 +65,7 @@ public class Programa {
             Exercicio17.MediaPonderada();
             break;
         case 18:
+            Exercicio18.MediaHarmonica();
             break;
         case 19:
             break;
