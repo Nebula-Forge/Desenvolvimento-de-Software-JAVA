@@ -56,6 +56,7 @@ public class Programa {
             Exercicio14.ProgressaoAritimetica();
             break;
         case 15:
+            Exercicio15.DistanciaPs();
             break;
         case 16:
             break;
