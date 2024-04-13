@@ -9,5 +9,7 @@ public class Programa {
         Exercicio02.SomaNumeros();
 
         Exercicio03.CompararValores();
+
+        Exercicio04.Calculos();
     }
 }
