@@ -53,6 +53,7 @@ public class Programa {
             Exercicio13.Calculadora();    
             break;
         case 14:
+            Exercicio14.ProgressaoAritimetica();
             break;
         case 15:
             break;
