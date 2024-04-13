@@ -20,10 +20,10 @@ public class Programa {
                 Exercicio03.DobrarValores();
                 break;
             case 4:
-
+                Exercicio04.IndiceElementos();
                 break;
             case 5:
-
+               
                 break;
             case 6:
 
