@@ -19,5 +19,7 @@ public class Programa {
         Exercicio07.IntervaloDeValores();
 
         Exercicio08.ValidarNumeros();
+
+        Exercicio09.ComparaçãoNumeros();
     }
 }
