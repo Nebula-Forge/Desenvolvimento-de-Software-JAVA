@@ -11,7 +11,7 @@ public class Exercicio16 {
     // d) 10% para os demais funcionários.
 
     public static void Executar() {
-        PrintController.ExibirNaTela(15);
+        PrintController.ExibirNaTela(16);
 
         System.out.println("16. Escrever um programa para uma empresa que decide dar um reajuste a seus\n"
                 + "584 funcionários de acordo com os seguintes critérios:\n"
