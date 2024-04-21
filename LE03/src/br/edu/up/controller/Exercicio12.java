@@ -12,7 +12,7 @@ public class Exercicio12 {
     // até 2000 e total geral.
 
     public static void Executar() {
-        PrintController.ExibirNaTela(11);
+        PrintController.ExibirNaTela(12);
 
         System.out.println("12. A concessionária de veículos “CARANGO VELHO” está vendendo os seus\n"
                 + "veículos com desconto. Faça um programa que calcule e exiba o valor do\n"
