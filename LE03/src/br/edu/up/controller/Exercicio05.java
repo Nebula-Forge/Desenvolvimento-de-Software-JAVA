@@ -8,7 +8,7 @@ public class Exercicio05 {
     // mostre o valor das prestações.
 
     public static void Executar() {
-        PrintController.ExibirNaTela(4);
+        PrintController.ExibirNaTela(5);
 
         System.out.println("5. A Loja Mamão com Açúcar está vendendo seus produtos em 5 (cinco)\n"
                 + "prestações sem juros. Faça um programa que receba um valor de uma compra e\n"
