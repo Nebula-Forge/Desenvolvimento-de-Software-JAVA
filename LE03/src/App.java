@@ -63,7 +63,7 @@ public class App {
                 Exercicio17.Executar();
                 break;
             case 18:
-                // Exercicio18.Executar();
+                Exercicio18.Executar();
                 break;
             case 19:
                 // Exercicio19.Executar();
