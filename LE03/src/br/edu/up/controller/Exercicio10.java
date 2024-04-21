@@ -15,6 +15,7 @@ public class Exercicio10 {
                 + "pessoa. Considerar a pessoa com 18 anos como maior de idade.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
+        
         // Solicita o número de pessoas
         System.out.print("Digite o número de pessoas: ");
         int numeroPessoas = scanner.nextInt();
