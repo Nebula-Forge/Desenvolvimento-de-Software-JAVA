@@ -16,7 +16,7 @@ public class Exercicio25 {
     // Imprima o nome do estudante, com o seu número, nota final e classificação.
 
     public static void Executar() {
-        PrintController.ExibirNaTela(24);
+        PrintController.ExibirNaTela(25);
 
         System.out
                 .println("25. Dado o nome de um estudante, com o respectivo número de matrícula e as\n"

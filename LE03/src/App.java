@@ -87,7 +87,7 @@ public class App {
                 Exercicio25.Executar();
                 break;
             case 26:
-                // Exercicio26.Executar();
+                Exercicio26.Executar();
                 break;
             default:
                 // Fecha o scanner
