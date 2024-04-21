@@ -36,7 +36,7 @@ public class App {
                 Exercicio08.Executar();
                 break;
             case 9:
-                // Exercicio09.Executar();
+                Exercicio09.Executar();
                 break;
             case 10:
                 // Exercicio10.Executar();
