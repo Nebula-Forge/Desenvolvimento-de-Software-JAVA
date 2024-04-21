@@ -3,11 +3,11 @@ package br.edu.up.controller;
 import java.util.Scanner;
 
 public class Exercicio06 {
-    public static void Executar() {
-        // 6. Faça um programa que receba o preço de custo de um produto e mostre o
-        // valor de venda. Sabe-se que o preço de custo receberá um acréscimo de acordo
-        // com um percentual informado pelo usuário.
+    // 6. Faça um programa que receba o preço de custo de um produto e mostre o
+    // valor de venda. Sabe-se que o preço de custo receberá um acréscimo de acordo
+    // com um percentual informado pelo usuário.
 
+    public static void Executar() {
         PrintController.ExibirNaTela(6);
 
         System.out.println("6. Faça um programa que receba o preço de custo de um produto e mostre o\n"
