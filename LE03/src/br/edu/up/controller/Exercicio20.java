@@ -10,6 +10,8 @@ public class Exercicio20 {
     // Professor Nível 2 R$17,00 por hora/aula
     // Professor Nível 3 R$25,00 por hora/aula
 
+    private static Scanner scanner = ScannerUtil.getScanner();
+
     public static void Executar() {
         PrintController.ExibirNaTela(20);
 
@@ -20,8 +22,6 @@ public class Exercicio20 {
                 + "Professor Nível 2 R$17,00 por hora/aula\n"
                 + "Professor Nível 3 R$25,00 por hora/aula\n");
 
-        Scanner scanner = ScannerUtil.getScanner();
-
         // Solicita o nível do professor
         System.out.println("Digite o nível do professor (1, 2 ou 3): ");
         int nivel = scanner.nextInt();
@@ -31,6 +31,15 @@ public class Exercicio20 {
         int horasAula = scanner.nextInt();
 
         // Calcula o salário do professor de acordo com o nível
+        double salarioHoraAula = calcularSalarioHoraAula(nivel);
+        double salarioTotal = calcularSalarioTotal(salarioHoraAula, horasAula);
+
+        // Exibe o salário do professor
+        System.out.println("O salário do professor é: R$" + salarioTotal);
+    }
+
+    // Método privado para calcular o salário por hora/aula
+    private static double calcularSalarioHoraAula(int nivel) {
         double salarioHoraAula;
         switch (nivel) {
             case 1:
@@ -44,12 +53,13 @@ public class Exercicio20 {
                 break;
             default:
                 System.out.println("Nível de professor inválido!");
-                return;
+                salarioHoraAula = 0.00;
         }
+        return salarioHoraAula;
+    }
 
-        double salarioTotal = salarioHoraAula * horasAula;
-
-        // Exibe o salário do professor
-        System.out.println("O salário do professor é: R$" + salarioTotal);
+    // Método privado para calcular o salário total
+    private static double calcularSalarioTotal(double salarioHoraAula, int horasAula) {
+        return salarioHoraAula * horasAula;
     }
 }

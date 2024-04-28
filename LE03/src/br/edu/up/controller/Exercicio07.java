@@ -10,6 +10,46 @@ public class Exercicio07 {
     // impostos 45%. Escrever um programa que leia o custo de fábrica de um carro e
     // informe o custo ao consumidor do mesmo.
 
+    private double custoFabrica;
+
+    // Construtor vazio
+    public Exercicio07() {
+    }
+
+    // Construtor com parâmetro
+    public Exercicio07(double custoFabrica) {
+        this.custoFabrica = custoFabrica;
+    }
+
+    // Método para acessar e modificar a variável privada
+    public double getCustoFabrica() {
+        return custoFabrica;
+    }
+
+    public void setCustoFabrica(double custoFabrica) {
+        this.custoFabrica = custoFabrica;
+    }
+
+    // Método para calcular o custo ao consumidor
+    public double calcularCustoConsumidor() {
+        // Define a percentagem do distribuidor e os impostos
+        double percentagemDistribuidor = 0.28; // 28%
+        double impostos = 0.45; // 45%
+
+        // Calcula os impostos sobre o custo de fábrica
+        double valorImpostos = impostos * custoFabrica;
+
+        // Calcula o custo ao distribuidor
+        double custoDistribuidor = custoFabrica + valorImpostos;
+
+        // Calcula a percentagem do distribuidor sobre o custo ao distribuidor
+        double valorDistribuidor = percentagemDistribuidor * custoDistribuidor;
+
+        // Calcula o custo ao consumidor
+        return custoDistribuidor + valorDistribuidor;
+    }
+
+    // Método para executar o programa
     public static void Executar() {
         PrintController.ExibirNaTela(7);
 
@@ -26,21 +66,12 @@ public class Exercicio07 {
         System.out.print("Digite o custo de fábrica do carro: R$");
         double custoFabrica = scanner.nextDouble();
 
-        // Define a percentagem do distribuidor e os impostos
-        double percentagemDistribuidor = 0.28; // 28%
-        double impostos = 0.45; // 45%
+        // Criando uma instância da classe Exercicio07 usando o construtor com parâmetro
+        Exercicio07 exercicio = new Exercicio07(custoFabrica);
 
-        // Calcula os impostos sobre o custo de fábrica
-        double valorImpostos = impostos * custoFabrica;
-
-        // Calcula o custo ao distribuidor
-        double custoDistribuidor = custoFabrica + valorImpostos;
-
-        // Calcula a percentagem do distribuidor sobre o custo ao distribuidor
-        double valorDistribuidor = percentagemDistribuidor * custoDistribuidor;
-
-        // Calcula o custo ao consumidor
-        double custoConsumidor = custoDistribuidor + valorDistribuidor;
+        // Utilizando o método de acesso para obter o custo de fábrica e calcular o
+        // custo ao consumidor
+        double custoConsumidor = exercicio.calcularCustoConsumidor();
 
         // Apresenta o custo ao consumidor
         System.out.println("O custo ao consumidor do carro é: R$" + custoConsumidor);

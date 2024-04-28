@@ -7,6 +7,17 @@ public class Exercicio10 {
     // mostre mensagem informando “maior de idade” e “menor de idade” para cada
     // pessoa. Considerar a pessoa com 18 anos como maior de idade.
 
+    private static class VerificadorIdade {
+        public static String verificarIdade(int idade) {
+            // Verifica se a pessoa é maior ou menor de idade
+            if (idade >= 18) {
+                return "Maior de idade";
+            } else {
+                return "Menor de idade";
+            }
+        }
+    }
+
     public static void Executar() {
         PrintController.ExibirNaTela(10);
 
@@ -15,7 +26,7 @@ public class Exercicio10 {
                 + "pessoa. Considerar a pessoa com 18 anos como maior de idade.\n");
 
         Scanner scanner = ScannerUtil.getScanner();
-        
+
         // Solicita o número de pessoas
         System.out.print("Digite o número de pessoas: ");
         int numeroPessoas = scanner.nextInt();
@@ -25,12 +36,10 @@ public class Exercicio10 {
             System.out.print("Digite a idade da pessoa " + i + ": ");
             int idade = scanner.nextInt();
 
-            // Verifica se a pessoa é maior ou menor de idade
-            if (idade >= 18) {
-                System.out.println("Pessoa " + i + ": Maior de idade");
-            } else {
-                System.out.println("Pessoa " + i + ": Menor de idade");
-            }
+            // Utiliza o verificador de idade para determinar se a pessoa é maior ou menor
+            // de idade
+            String mensagem = VerificadorIdade.verificarIdade(idade);
+            System.out.println("Pessoa " + i + ": " + mensagem);
         }
     }
 }

@@ -7,6 +7,24 @@ public class Exercicio11 {
     // nome e se ela é homem ou mulher. No final informe total de homens e de
     // mulheres.
 
+    private static class Pessoa {
+        private String nome;
+        private char sexo;
+
+        public Pessoa(String nome, char sexo) {
+            this.nome = nome;
+            this.sexo = sexo;
+        }
+
+        public String getNome() {
+            return nome;
+        }
+
+        public char getSexo() {
+            return sexo;
+        }
+    }
+
     public static void Executar() {
         PrintController.ExibirNaTela(11);
 
@@ -29,15 +47,18 @@ public class Exercicio11 {
             char sexo = scanner.next().charAt(0);
             scanner.nextLine(); // Limpa o buffer do teclado
 
+            // Cria um objeto Pessoa com as informações lidas
+            Pessoa pessoa = new Pessoa(nome, sexo);
+
             // Verifica se é homem ou mulher e atualiza o total
-            if (sexo == 'M' || sexo == 'm') {
-                System.out.println(nome + " é homem.");
+            if (pessoa.getSexo() == 'M' || pessoa.getSexo() == 'm') {
+                System.out.println(pessoa.getNome() + " é homem.");
                 totalHomens++;
-            } else if (sexo == 'F' || sexo == 'f') {
-                System.out.println(nome + " é mulher.");
+            } else if (pessoa.getSexo() == 'F' || pessoa.getSexo() == 'f') {
+                System.out.println(pessoa.getNome() + " é mulher.");
                 totalMulheres++;
             } else {
-                System.out.println("Sexo inválido para " + nome);
+                System.out.println("Sexo inválido para " + pessoa.getNome());
             }
         }
 

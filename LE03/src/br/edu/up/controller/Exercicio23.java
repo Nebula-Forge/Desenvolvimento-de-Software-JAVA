@@ -7,15 +7,14 @@ public class Exercicio23 {
     // pessoa. Calcule e mostre nome e o seu peso ideal de acordo com as seguintes
     // características da pessoa: Sexo Altura Idade Peso Ideal
 
+    private static Scanner scanner = ScannerUtil.getScanner();
+
     public static void Executar() {
         PrintController.ExibirNaTela(23);
 
-        System.out
-                .println("23. Faça um programa que leia o nome, o sexo, a altura e a idade de uma\n"
-                        + "pessoa. Calcule e mostre nome e o seu peso ideal de acordo com as seguintes\n"
-                        + "características da pessoa: Sexo Altura Idade Peso Ideal.\n");
-
-        Scanner scanner = ScannerUtil.getScanner();
+        System.out.println("23. Faça um programa que leia o nome, o sexo, a altura e a idade de uma\n"
+                + "pessoa. Calcule e mostre nome e o seu peso ideal de acordo com as seguintes\n"
+                + "características da pessoa: Sexo Altura Idade Peso Ideal.\n");
 
         // Solicita o nome da pessoa
         System.out.print("Digite o nome da pessoa: ");
@@ -33,7 +32,13 @@ public class Exercicio23 {
         System.out.print("Digite a idade da pessoa: ");
         int idade = scanner.nextInt();
 
-        // Calcula o peso ideal de acordo com o sexo, altura e idade
+        // Calcula e exibe o peso ideal
+        double pesoIdeal = calcularPesoIdeal(sexo, altura, idade);
+        System.out.println("Nome: " + nome);
+        System.out.println("Peso ideal: " + pesoIdeal + " kg");
+    }
+
+    private static double calcularPesoIdeal(char sexo, double altura, int idade) {
         double pesoIdeal;
         if (sexo == 'M' || sexo == 'm') {
             if (altura > 1.70) {
@@ -63,11 +68,8 @@ public class Exercicio23 {
             }
         } else {
             System.out.println("Sexo inválido!");
-            return;
+            pesoIdeal = 0;
         }
-
-        // Exibe o nome da pessoa e o peso ideal
-        System.out.println("Nome: " + nome);
-        System.out.println("Peso ideal: " + pesoIdeal + " kg");
+        return pesoIdeal;
     }
 }

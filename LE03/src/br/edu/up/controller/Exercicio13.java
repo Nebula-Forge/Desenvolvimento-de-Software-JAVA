@@ -7,6 +7,42 @@ public class Exercicio13 {
     // e saúde) e informe se está apta ou não para cumprir o serviço militar
     // obrigatório. Informe os totais.
 
+    private static class Pessoa {
+        private String nome;
+        private char sexo;
+        private int idade;
+        private char saude;
+
+        public Pessoa(String nome, char sexo, int idade, char saude) {
+            this.nome = nome;
+            this.sexo = sexo;
+            this.idade = idade;
+            this.saude = saude;
+        }
+
+        public String getNome() {
+            return nome;
+        }
+
+        public char getSexo() {
+            return sexo;
+        }
+
+        public int getIdade() {
+            return idade;
+        }
+
+        public char getSaude() {
+            return saude;
+        }
+    }
+
+    private static class ServicoMilitar {
+        public static boolean estaApto(Pessoa pessoa) {
+            return pessoa.getIdade() >= 18 && pessoa.getSaude() == 'A' && (pessoa.getSexo() == 'M' || pessoa.getSexo() == 'm');
+        }
+    }
+
     public static void Executar() {
         PrintController.ExibirNaTela(13);
 
@@ -46,12 +82,14 @@ public class Exercicio13 {
             char saude = scanner.next().charAt(0);
             scanner.nextLine(); // Limpar o buffer do teclado
 
+            Pessoa pessoa = new Pessoa(nome, sexo, idade, saude);
+
             // Verifica se a pessoa está apta ou não para o serviço militar
-            if (idade >= 18 && saude == 'A' && (sexo == 'M' || sexo == 'm')) {
-                System.out.println(nome + " está apto para cumprir o serviço militar obrigatório.");
+            if (ServicoMilitar.estaApto(pessoa)) {
+                System.out.println(pessoa.getNome() + " está apto para cumprir o serviço militar obrigatório.");
                 totalAptas++;
             } else {
-                System.out.println(nome + " não está apto para cumprir o serviço militar obrigatório.");
+                System.out.println(pessoa.getNome() + " não está apto para cumprir o serviço militar obrigatório.");
                 totalInaptas++;
             }
 

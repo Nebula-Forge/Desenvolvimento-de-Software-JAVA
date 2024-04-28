@@ -8,6 +8,8 @@ public class Exercicio17 {
     // reajuste e seu novo salário. Calcule quanto à empresa vai aumentar sua folha
     // de pagamento.
 
+    private static Scanner scanner = ScannerUtil.getScanner();
+
     public static void Executar() {
         PrintController.ExibirNaTela(17);
 
@@ -15,8 +17,6 @@ public class Exercicio17 {
                 + "Calcule o seu novo salário reajustado. Escrever o nome do funcionário, o\n"
                 + "reajuste e seu novo salário. Calcule quanto à empresa vai aumentar sua folha\n"
                 + "de pagamento.\n");
-
-        Scanner scanner = ScannerUtil.getScanner();
 
         // Solicita o nome do funcionário
         System.out.print("Digite o nome do funcionário: ");
@@ -48,8 +48,8 @@ public class Exercicio17 {
         System.out.println("\nAumento na folha de pagamento da empresa: R$" + aumentoFolha);
     }
 
-    // Método para calcular o novo salário reajustado
-    public static double calcularNovoSalario(double salario, double salarioMinimo) {
+    // Método privado para calcular o novo salário reajustado
+    private static double calcularNovoSalario(double salario, double salarioMinimo) {
         double percentualReajuste;
 
         // Determina o percentual de reajuste com base no salário atual

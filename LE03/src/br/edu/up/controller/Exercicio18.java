@@ -12,6 +12,8 @@ public class Exercicio18 {
     // F >= 30 200,00
     // < 30 80,00
 
+    private static Scanner scanner = ScannerUtil.getScanner();
+
     public static void Executar() {
         PrintController.ExibirNaTela(18);
 
@@ -23,8 +25,6 @@ public class Exercicio18 {
                 + "< 30 50,00\n"
                 + "F >= 30 200,00\n"
                 + "< 30 80,00\n");
-
-        Scanner scanner = ScannerUtil.getScanner();
 
         // Solicita o nome do funcionário
         System.out.print("Digite o nome do funcionário: ");
@@ -53,8 +53,8 @@ public class Exercicio18 {
         System.out.println("Salário líquido acrescido do abono: R$" + salarioLiquido);
     }
 
-    // Método para calcular o abono de acordo com o sexo e idade
-    public static double calcularAbono(char sexo, int idade) {
+    // Método privado para calcular o abono de acordo com o sexo e idade
+    private static double calcularAbono(char sexo, int idade) {
         double abono;
 
         if (sexo == 'M' || sexo == 'm') {

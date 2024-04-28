@@ -7,6 +7,42 @@ public class Exercicio02 {
     // fornecida a distância total percorrida pelo automóvel e o total de
     // combustível gasto.
 
+    private double distanciaPercorrida;
+    private double combustivelGasto;
+
+    // Construtor vazio
+    public Exercicio02() {
+    }
+
+    // Construtor com parâmetros
+    public Exercicio02(double distanciaPercorrida, double combustivelGasto) {
+        this.distanciaPercorrida = distanciaPercorrida;
+        this.combustivelGasto = combustivelGasto;
+    }
+
+    // Métodos para acessar e modificar as variáveis privadas
+    public double getDistanciaPercorrida() {
+        return distanciaPercorrida;
+    }
+
+    public void setDistanciaPercorrida(double distanciaPercorrida) {
+        this.distanciaPercorrida = distanciaPercorrida;
+    }
+
+    public double getCombustivelGasto() {
+        return combustivelGasto;
+    }
+
+    public void setCombustivelGasto(double combustivelGasto) {
+        this.combustivelGasto = combustivelGasto;
+    }
+
+    // Método para calcular o consumo médio
+    public double calcularConsumoMedio() {
+        return distanciaPercorrida / combustivelGasto;
+    }
+
+    // Método para executar o programa
     public static void Executar() {
         PrintController.ExibirNaTela(2);
 
@@ -22,8 +58,12 @@ public class Exercicio02 {
         System.out.println("Digite o total de combustível gasto (em litros): ");
         double combustivelGasto = scanner.nextDouble();
 
-        double consumoMedio = distanciaPercorrida / combustivelGasto;
+        // Criando uma instância da classe Exercicio02 usando o construtor com
+        // parâmetros
+        Exercicio02 exercicio = new Exercicio02(distanciaPercorrida, combustivelGasto);
 
-        System.out.println("O consumo médio do automóvel é de " + consumoMedio + " km/l");
+        // Utilizando os métodos de acesso para obter os valores e calcular o consumo
+        // médio
+        System.out.println("O consumo médio do automóvel é de " + exercicio.calcularConsumoMedio() + " km/l");
     }
 }

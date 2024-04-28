@@ -7,6 +7,37 @@ public class Exercicio14 {
     // produtos. Mostre como resultado se houve lucro, prejuízo ou empate para cada
     // produto. Informe média de preço de custo e do preço de venda.
 
+    private static class Produto {
+        private double precoCusto;
+        private double precoVenda;
+
+        public Produto(double precoCusto, double precoVenda) {
+            this.precoCusto = precoCusto;
+            this.precoVenda = precoVenda;
+        }
+
+        public double getPrecoCusto() {
+            return precoCusto;
+        }
+
+        public double getPrecoVenda() {
+            return precoVenda;
+        }
+    }
+
+    private static class CalculadoraLucroPrejuizo {
+        public static String calcularLucroPrejuizo(Produto produto) {
+            double lucroOuPrejuizo = produto.getPrecoVenda() - produto.getPrecoCusto();
+            if (lucroOuPrejuizo > 0) {
+                return "Lucro";
+            } else if (lucroOuPrejuizo < 0) {
+                return "Prejuízo";
+            } else {
+                return "Empate";
+            }
+        }
+    }
+
     public static void Executar() {
         PrintController.ExibirNaTela(14);
 
@@ -29,17 +60,12 @@ public class Exercicio14 {
             System.out.print("Digite o preço de venda do produto " + i + ": R$");
             double precoVenda = scanner.nextDouble();
 
-            // Calcula o lucro ou prejuízo
-            double lucroOuPrejuizo = precoVenda - precoCusto;
+            // Cria um objeto Produto com os preços informados
+            Produto produto = new Produto(precoCusto, precoVenda);
 
-            // Verifica se houve lucro, prejuízo ou empate
-            if (lucroOuPrejuizo > 0) {
-                System.out.println("Produto " + i + ": Lucro");
-            } else if (lucroOuPrejuizo < 0) {
-                System.out.println("Produto " + i + ": Prejuízo");
-            } else {
-                System.out.println("Produto " + i + ": Empate");
-            }
+            // Calcula lucro, prejuízo ou empate para o produto
+            String resultado = CalculadoraLucroPrejuizo.calcularLucroPrejuizo(produto);
+            System.out.println("Produto " + i + ": " + resultado);
 
             // Adiciona ao somatório de preços de custo e de venda
             somaPrecoCusto += precoCusto;

@@ -10,6 +10,39 @@ public class Exercicio15 {
     // –14%). Com valor do veículo zero encerra entrada de dados. Informe total de
     // desconto e total pago pelos clientes.
 
+    private static class Veiculo {
+        private double valor;
+        private double desconto;
+
+        public Veiculo(double valor, double desconto) {
+            this.valor = valor;
+            this.desconto = desconto;
+        }
+
+        public double calcularValorDesconto() {
+            return valor * desconto;
+        }
+
+        public double calcularValorPago() {
+            return valor - calcularValorDesconto();
+        }
+    }
+
+    private static class CalculadoraDesconto {
+        public static double calcularDesconto(int tipoCombustivel) {
+            switch (tipoCombustivel) {
+                case 1:
+                    return 0.25; // 25% de desconto para álcool
+                case 2:
+                    return 0.21; // 21% de desconto para gasolina
+                case 3:
+                    return 0.14; // 14% de desconto para diesel
+                default:
+                    return 0; // Nenhum desconto para opções inválidas
+            }
+        }
+    }
+
     public static void Executar() {
         PrintController.ExibirNaTela(15);
 
@@ -44,21 +77,14 @@ public class Exercicio15 {
             double valorVeiculo = scanner.nextDouble();
 
             // Calcula o desconto de acordo com o tipo de combustível
-            double desconto;
-            if (tipoCombustivel == 1) {
-                desconto = 0.25; // 25% de desconto para álcool
-            } else if (tipoCombustivel == 2) {
-                desconto = 0.21; // 21% de desconto para gasolina
-            } else if (tipoCombustivel == 3) {
-                desconto = 0.14; // 14% de desconto para diesel
-            } else {
-                System.out.println("Opção inválida!");
-                continue; // Volta ao início do loop se a opção for inválida
-            }
+            double desconto = CalculadoraDesconto.calcularDesconto(tipoCombustivel);
+
+            // Cria um objeto Veiculo com o valor e desconto informados
+            Veiculo veiculo = new Veiculo(valorVeiculo, desconto);
 
             // Calcula o valor do desconto e o valor a ser pago pelo cliente
-            double valorDesconto = valorVeiculo * desconto;
-            double valorPago = valorVeiculo - valorDesconto;
+            double valorDesconto = veiculo.calcularValorDesconto();
+            double valorPago = veiculo.calcularValorPago();
 
             // Adiciona ao total de desconto e total pago pelos clientes
             totalDesconto += valorDesconto;

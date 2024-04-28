@@ -13,6 +13,8 @@ public class Exercicio19 {
     // também isóscele; Triângulo Escaleno: aquele que tem os comprimentos de seus
     // três lados diferentes.
 
+    private static Scanner scanner = ScannerUtil.getScanner();
+
     public static void Executar() {
         PrintController.ExibirNaTela(19);
 
@@ -25,8 +27,6 @@ public class Exercicio19 {
                 + "comprimentos de dois lados iguais. Portanto, todo triângulo equilátero é\n"
                 + "também isóscele; Triângulo Escaleno: aquele que tem os comprimentos de seus\n"
                 + "três lados diferentes.\n");
-
-        Scanner scanner = ScannerUtil.getScanner();
 
         // Solicita os três valores inteiros que representam os lados do triângulo
         System.out.println("Digite os três valores inteiros que representam os lados do triângulo:");
@@ -49,8 +49,8 @@ public class Exercicio19 {
         }
     }
 
-    // Método para verificar se os valores podem formar um triângulo
-    public static boolean verificarTriangulo(int lado1, int lado2, int lado3) {
+    // Método privado para verificar se os valores podem formar um triângulo
+    private static boolean verificarTriangulo(int lado1, int lado2, int lado3) {
         return (lado1 + lado2 > lado3) && (lado1 + lado3 > lado2) && (lado2 + lado3 > lado1);
     }
 }

@@ -7,6 +7,43 @@ public class Exercicio06 {
     // valor de venda. Sabe-se que o preço de custo receberá um acréscimo de acordo
     // com um percentual informado pelo usuário.
 
+    private double precoCusto;
+    private double percentualAcrescimo;
+
+    // Construtor vazio
+    public Exercicio06() {
+    }
+
+    // Construtor com parâmetros
+    public Exercicio06(double precoCusto, double percentualAcrescimo) {
+        this.precoCusto = precoCusto;
+        this.percentualAcrescimo = percentualAcrescimo;
+    }
+
+    // Métodos para acessar e modificar as variáveis privadas
+    public double getPrecoCusto() {
+        return precoCusto;
+    }
+
+    public void setPrecoCusto(double precoCusto) {
+        this.precoCusto = precoCusto;
+    }
+
+    public double getPercentualAcrescimo() {
+        return percentualAcrescimo;
+    }
+
+    public void setPercentualAcrescimo(double percentualAcrescimo) {
+        this.percentualAcrescimo = percentualAcrescimo;
+    }
+
+    // Método para calcular o preço de venda
+    public double calcularPrecoVenda() {
+        double acrescimo = (percentualAcrescimo / 100) * precoCusto;
+        return precoCusto + acrescimo;
+    }
+
+    // Método para executar o programa
     public static void Executar() {
         PrintController.ExibirNaTela(6);
 
@@ -24,13 +61,12 @@ public class Exercicio06 {
         System.out.print("Digite o percentual de acréscimo (em %): ");
         double percentualAcrescimo = scanner.nextDouble();
 
-        // Calcula o valor do acréscimo
-        double acrescimo = (percentualAcrescimo / 100) * precoCusto;
+        // Criando uma instância da classe Exercicio06 usando o construtor com
+        // parâmetros
+        Exercicio06 exercicio = new Exercicio06(precoCusto, percentualAcrescimo);
 
-        // Calcula o preço de venda
-        double precoVenda = precoCusto + acrescimo;
-
-        // Apresenta o preço de venda
-        System.out.println("O preço de venda do produto é: R$" + precoVenda);
+        // Utilizando os métodos de acesso para obter os valores e calcular o preço de
+        // venda
+        System.out.println("O preço de venda do produto é: R$" + exercicio.calcularPrecoVenda());
     }
 }

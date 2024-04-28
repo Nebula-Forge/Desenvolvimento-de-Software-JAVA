@@ -15,23 +15,22 @@ public class Exercicio25 {
     // [0,5] R
     // Imprima o nome do estudante, com o seu número, nota final e classificação.
 
+    private static Scanner scanner = ScannerUtil.getScanner();
+
     public static void Executar() {
         PrintController.ExibirNaTela(25);
 
-        System.out
-                .println("25. Dado o nome de um estudante, com o respectivo número de matrícula e as\n"
-                        + "três notas acima mencionadas, desenvolva um programa para calcular a nota\n"
-                        + "final e a classificação de cada estudante. A classificação é dada conforme a\n"
-                        + "lista abaixo:\n"
-                        + "Nota Final Classificação\n"
-                        + "[8,10] A\n"
-                        + "[7,8] B\n"
-                        + "[6,7] C\n"
-                        + "[5,6] D\n"
-                        + "[0,5] R\n"
-                        + "Imprima o nome do estudante, com o seu número, nota final e classificação.\n");
-
-        Scanner scanner = ScannerUtil.getScanner();
+        System.out.println("25. Dado o nome de um estudante, com o respectivo número de matrícula e as\n"
+                + "três notas acima mencionadas, desenvolva um programa para calcular a nota\n"
+                + "final e a classificação de cada estudante. A classificação é dada conforme a\n"
+                + "lista abaixo:\n"
+                + "Nota Final Classificação\n"
+                + "[8,10] A\n"
+                + "[7,8] B\n"
+                + "[6,7] C\n"
+                + "[5,6] D\n"
+                + "[0,5] R\n"
+                + "Imprima o nome do estudante, com o seu número, nota final e classificação.\n");
 
         // Solicita os dados do estudante
         System.out.print("Digite o nome do estudante: ");
@@ -62,24 +61,25 @@ public class Exercicio25 {
         System.out.println("Número de matrícula: " + matricula);
         System.out.println("Nota final: " + notaFinal);
         System.out.println("Classificação: " + classificacao);
+
+        // Fechar o scanner após o uso
+        scanner.close();
     }
 
     // Método para calcular a nota final ponderada
-    public static double calcularNotaFinal(double notaLaboratorio, double notaSemestral, double notaExameFinal) {
+    private static double calcularNotaFinal(double notaLaboratorio, double notaSemestral, double notaExameFinal) {
         // Define os pesos
         final double PESO_LABORATORIO = 2;
         final double PESO_SEMESTRAL = 3;
         final double PESO_EXAME_FINAL = 5;
 
         // Calcula a média ponderada das notas
-        double notaFinal = ((notaLaboratorio * PESO_LABORATORIO) + (notaSemestral * PESO_SEMESTRAL)
+        return ((notaLaboratorio * PESO_LABORATORIO) + (notaSemestral * PESO_SEMESTRAL)
                 + (notaExameFinal * PESO_EXAME_FINAL)) / (PESO_LABORATORIO + PESO_SEMESTRAL + PESO_EXAME_FINAL);
-
-        return notaFinal;
     }
 
     // Método para determinar a classificação do estudante
-    public static char determinarClassificacao(double notaFinal) {
+    private static char determinarClassificacao(double notaFinal) {
         if (notaFinal >= 8 && notaFinal <= 10) {
             return 'A';
         } else if (notaFinal >= 7 && notaFinal < 8) {

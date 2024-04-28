@@ -22,33 +22,30 @@ public class Exercicio16 {
 
         Scanner scanner = ScannerUtil.getScanner();
 
-        // Define o valor do salário mínimo
-        double salarioMinimo = 1100.00; // Valor fictício para exemplo
+        double salarioMinimo = 1100.00;
 
-        // Solicita o salário de cada funcionário
-        double[] salarios = new double[584];
         for (int i = 0; i < 584; i++) {
             System.out.print("Digite o salário do funcionário " + (i + 1) + " em reais: ");
-            salarios[i] = scanner.nextDouble();
-        }
-
-        // Calcula o reajuste para cada funcionário de acordo com os critérios
-        for (int i = 0; i < 584; i++) {
-            double reajuste = 0;
-
-            if (salarios[i] < 3 * salarioMinimo) {
-                reajuste = 0.5;
-            } else if (salarios[i] >= 3 * salarioMinimo && salarios[i] <= 10 * salarioMinimo) {
-                reajuste = 0.2;
-            } else if (salarios[i] > 10 * salarioMinimo && salarios[i] <= 20 * salarioMinimo) {
-                reajuste = 0.15;
-            } else {
-                reajuste = 0.1;
-            }
-
-            double novoSalario = salarios[i] * (1 + reajuste);
-
+            double salario = scanner.nextDouble();
+            double reajuste = calcularReajuste(salario, salarioMinimo);
+            double novoSalario = salario * (1 + reajuste);
             System.out.println("O novo salário do funcionário " + (i + 1) + " é: R$" + novoSalario);
         }
+    }
+
+    private static double calcularReajuste(double salario, double salarioMinimo) {
+        double reajuste;
+
+        if (salario < 3 * salarioMinimo) {
+            reajuste = 0.5;
+        } else if (salario >= 3 * salarioMinimo && salario <= 10 * salarioMinimo) {
+            reajuste = 0.2;
+        } else if (salario > 10 * salarioMinimo && salario <= 20 * salarioMinimo) {
+            reajuste = 0.15;
+        } else {
+            reajuste = 0.1;
+        }
+
+        return reajuste;
     }
 }
