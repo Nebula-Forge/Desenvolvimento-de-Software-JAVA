@@ -1,4 +1,4 @@
-package br.edu.up.controllers;
+package br.edu.up.models;
 
 public class Livro {
     private String codigo;
