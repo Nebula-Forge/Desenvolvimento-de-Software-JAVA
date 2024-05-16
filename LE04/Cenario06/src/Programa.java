@@ -105,13 +105,13 @@ public class Programa {
 
     private static void adicionarAeronave(AeroportoController controller, Scanner scanner) {
         System.out.println("### Adicionar Aeronave ###");
-        
+
         System.out.print("Código: ");
         String codigo = scanner.nextLine();
-        
+
         System.out.print("Tipo: ");
         String tipo = scanner.nextLine();
-        
+
         System.out.print("Número de Assentos: ");
         int numeroAssentos = scanner.nextInt();
 
