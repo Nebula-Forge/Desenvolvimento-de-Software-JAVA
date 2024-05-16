@@ -1,6 +1,6 @@
 package br.edu.up.models;
 
-public class Passageiro extends Pessoa{
+public class Passageiro extends Pessoa {
     private String identificadorBagagem;
     private Passagem passagem;
 
@@ -16,5 +16,11 @@ public class Passageiro extends Pessoa{
 
     public Passagem getPassagem() {
         return passagem;
+    }
+
+    @Override
+    public String toString() {
+        return "Passageiro{nome='" + getNome() + "', rg='" + getRg() + "', identificadorBagagem='"
+                + identificadorBagagem + "', passagem={numeroAssento='" + passagem.getNumeroAssento() + "', classeAssento='" + passagem.getClasseAssento() + "', dataVoo='" + passagem.getDataVoo() + "'}}";
     }
 }

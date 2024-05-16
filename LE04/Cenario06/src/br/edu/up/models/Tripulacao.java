@@ -17,4 +17,10 @@ public class Tripulacao extends Pessoa {
     public String getMatriculaFuncionario() {
         return matriculaFuncionario;
     }
+
+    @Override
+    public String toString() {
+        return "Tripulacao{" + "nome='" + getNome() + "'" + ", rg='" + getRg() + "'" + ", identificacaoAeronautica='"
+                + identificacaoAeronautica + "'" + ", matriculaFuncionario='" + matriculaFuncionario + "'" + '}';
+    }
 }

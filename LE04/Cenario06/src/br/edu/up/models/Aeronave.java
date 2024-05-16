@@ -22,4 +22,10 @@ public class Aeronave {
     public int getQuantidadeAssentos() {
         return quantidadeAssentos;
     }
+
+    @Override
+    public String toString() {
+        return "Aeronave{" + "codigo='" + codigo + "'" + ", tipo='" + tipo + "'" + ", quantidadeAssentos='"
+                + quantidadeAssentos + "'" + '}';
+    }
 }
