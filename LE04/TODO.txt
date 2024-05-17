@@ -1,0 +1,1 @@
+Corrigir relacionamento de classes no exercicio 10 (Seguros com Segurado) e 08 (Agenda com Contato)
